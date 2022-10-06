@@ -36,16 +36,7 @@ void create(int n)
     tail->next = head;
     head->prev = tail;
 }
-void display()
-{
-    struct node *temp;
-    temp = head;
-    do
-    {
-        printf("%d ", temp->data);
-        temp = temp->next;
-    } while (temp != head);
-}
+
 int main()
 {
     int n;
